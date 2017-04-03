@@ -7,12 +7,14 @@ Given an array of integers, return *indices* of the two numbers such that they a
 You may assume that each input would have *exactly* one solution, and you may not use the same element twice.
 
 *Example*
+
 `
 Given nums = [2, 7, 11, 15], target = 9,
 
 Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
 `
+
 Result:[Two Sum](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/twoSum.py)
 
 ## 2 Add Two Numbers
@@ -22,3 +24,5 @@ You are given two *non-empty* linked lists representing two non-negative integer
 You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 *Input*: (2 -> 4 -> 3) + (5 -> 6 -> 4)
 *Output*: 7 -> 0 -> 8
+
+Result:[Add Two Numbers](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/addTwoNumbers.py)
