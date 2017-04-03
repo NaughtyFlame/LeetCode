@@ -1,3 +1,5 @@
+#这道题用到哈希函数，对数值进行下标的映射，复杂度 O(n)
+
 class Solution(object):
     def twoSum(self, nums, target):
         """
