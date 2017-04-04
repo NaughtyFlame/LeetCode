@@ -25,6 +25,7 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 **Input**: (2 -> 4 -> 3) + (5 -> 6 -> 4)
 **Output**: 7 -> 0 -> 8
 
+**题目理解**：累加的函数，链表的头是个位，以此类推。例子按照十进制加减就是：342 + 465 =807。在实现过程中，注意进位。 
 Result:[Add Two Numbers](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/addTwoNumbers.py)
 
 ## 7 Reverse Integer
@@ -37,12 +38,20 @@ Reverse digits of an integer.
 **Note**:
 The input is assumed to be a 32-bit signed integer. Your function should **return 0 when the reversed integer overflows**. 
 
+**题目理解**：这里要注意有个 integer overflows。
 Result:[Reverse Integer](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/reverse_integer.py)
 
 ## 9 Palindrome Number
 
 ### Description
 Determine whether an integer is a palindrome. Do this without extra space.
+**理解题目**：判断一个整形数字是否是回文。
 [click to show spoilers.](https://leetcode.com/problems/palindrome-number/#/description)
 
 Result:[Palindrome Number](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/palindromeNumber.py)
+
+## 13 Roman to Integer
+
+### Description
+Given a roman numeral, convert it to an integer.
+Input is guaranteed to be within the range from 1 to 3999.
