@@ -39,3 +39,10 @@ The input is assumed to be a 32-bit signed integer. Your function should **retur
 
 Result:[Reverse Integer](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/reverse_integer.py)
 
+## 9 Palindrome Number
+
+### Description
+Determine whether an integer is a palindrome. Do this without extra space.
+[click to show spoilers.](https://leetcode.com/problems/palindrome-number/#/description)
+
+Result:[Palindrome Number](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/palindromeNumber.py)
