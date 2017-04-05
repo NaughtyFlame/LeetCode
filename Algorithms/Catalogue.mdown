@@ -75,3 +75,6 @@ Result:[Longest Common Prefix](https://github.com/NaughtyFlame/LeetCode/blob/mas
 Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.
 
+**题目理解**：这道题用栈的方式实现，遍历字符串，检验到左括号入栈，检验到右括号时，出栈检验是否匹配，最后检验栈是否为空，排除右括号缺失的情况。
+
+Result:[Valid Parentheses](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/ValidParentheses.py)
