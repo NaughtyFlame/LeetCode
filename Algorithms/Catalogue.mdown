@@ -61,3 +61,17 @@ Input is guaranteed to be within the range from 1 to 3999.
 **题目理解**: 将罗马数字转换成整型数字。首先要理解罗马数字的计算方式。大数左边的为减右边是加。
 
 Result:[Roman to Integer](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/romanToint.py)
+
+## 14 Longest Common Prefix 
+
+### Description
+Write a function to find the longest common prefix string amongst an array of strings. 
+
+Result:[Longest Common Prefix](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/LongestCommonPrefix.py)
+
+## 20 Valid Parentheses
+
+### Description
+Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.
+
