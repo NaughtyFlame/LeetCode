@@ -39,6 +39,7 @@ Reverse digits of an integer.
 The input is assumed to be a 32-bit signed integer. Your function should **return 0 when the reversed integer overflows**. 
 
 **题目理解**：这里要注意有个 integer overflows。
+
 Result:[Reverse Integer](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/reverse_integer.py)
 
 ## 9 Palindrome Number
@@ -46,6 +47,7 @@ Result:[Reverse Integer](https://github.com/NaughtyFlame/LeetCode/blob/master/Al
 ### Description
 Determine whether an integer is a palindrome. Do this without extra space.
 **理解题目**：判断一个整形数字是否是回文。
+
 [click to show spoilers.](https://leetcode.com/problems/palindrome-number/#/description)
 
 Result:[Palindrome Number](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/palindromeNumber.py)
