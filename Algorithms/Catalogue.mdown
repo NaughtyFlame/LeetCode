@@ -85,3 +85,5 @@ Result:[Valid Parentheses](https://github.com/NaughtyFlame/LeetCode/blob/master/
 Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
 
 **题目理解** 合并两个有序链表，合成的列表也是有序的。方法是，创建一个新的节点，穿插连接两个输入链表。
+
+Result：[Merge Two Sorted Lists](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/MergeTwoSortedLists.py)
