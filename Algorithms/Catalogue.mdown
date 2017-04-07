@@ -118,4 +118,6 @@ Your function should return length = 2, with the first two elements of nums bein
 
 **题目理解**：和[26 Remove Duplicates from Sorted Array](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/Catalogue.mdown#26-remove-duplicates-from-sorted-array) 类似，在原列表中设置两个指针，一个进行遍历，另一个进行赋值并计算新的length
 
+Result:[Remove Element](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/RemoveElement.py)
+
 
