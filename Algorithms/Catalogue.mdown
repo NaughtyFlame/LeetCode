@@ -120,4 +120,13 @@ Your function should return length = 2, with the first two elements of nums bein
 
 Result:[Remove Element](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/RemoveElement.py)
 
+## 28 Implement strStr()
 
+### Description
+Implement strStr().
+
+Returns the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+
+**题目理解**: 简单的算法，复杂度O(n^2),可以使用kmp算法将复杂度降至O(n)
+
+Result:[Implement strStr()](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/strStr.py)
