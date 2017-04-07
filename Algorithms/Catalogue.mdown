@@ -140,10 +140,35 @@ You may assume no duplicates in the array.
 
 Here are few examples.
 >[1,3,5,6], 5 → 2
+
 >[1,3,5,6], 2 → 1
+
 >[1,3,5,6], 7 → 4
+
 >[1,3,5,6], 0 → 0
 
 [View in Leetcode](https://leetcode.com/problems/search-insert-position/#/description)
 
 Result: [Search Insert Position](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/SearchInsert.py)
+
+## 38 Count and Say
+
+### Description
+The count-and-say sequence is the sequence of integers beginning as follows:
+1, 11, 21, 1211, 111221, ...
+
+>1 is read off as "one 1" or 11.
+
+>11 is read off as "two 1s" or 21.
+
+>21 is read off as "one 2, then one 1" or 1211.
+
+Given an integer n, generate the nth sequence.
+
+Note: The sequence of integers will be represented as a string.
+
+**题目理解**: 需要用到迭代。
+
+[View in Leetcode](https://leetcode.com/problems/count-and-say/#/description)
+
+Result: [Count and Say](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/CountAndSay.py)
