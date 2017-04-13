@@ -197,3 +197,4 @@ Given s = **"Hello World"**,
 return **5**.
 
 Result: [Length of Last Word](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/LenLastWord.py)
+
