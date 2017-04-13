@@ -198,3 +198,13 @@ return **5**.
 
 Result: [Length of Last Word](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/LenLastWord.py)
 
+## 66 Plus One
+
+###Description
+Given a non-negative integer represented as a **non-empty** array of digits, plus one to the integer.
+
+You may assume the integer do not contain any leading zero, except the number 0 itself.
+
+The digits are stored such that the most significant digit is at the head of the list.
+
+Result: [Plus One](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/PlusOne.py)
