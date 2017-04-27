@@ -222,3 +222,16 @@ Return "100".
 [view in Leetcode](https://leetcode.com/problems/add-binary/#/description)
 
 Result: [Add Binary](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/addBinary.py)
+
+## 69 Sqrt(x)
+
+### Description
+Implement int sqrt(int x).
+Compute and return the square root of x.
+
+[view in Leetcode](https://leetcode.com/problems/sqrtx/#/description)
+
+分析：此题需要返回的值是int形式的，所以用二分法最为合适，如果计算float格式平方根，可以使用牛顿迭代法。
+
+Result: [Sqrt(x)](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/mysqrt_1.py)
+
