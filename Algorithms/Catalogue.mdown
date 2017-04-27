@@ -208,3 +208,17 @@ You may assume the integer do not contain any leading zero, except the number 0 
 The digits are stored such that the most significant digit is at the head of the list.
 
 Result: [Plus One](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/PlusOne.py)
+
+## 67 Add Binary 
+
+### Description
+Given two binary strings, return their sum (also a binary string).
+
+For example,
+a = "11"
+b = "1"
+Return "100".
+
+[view in Leetcode](https://leetcode.com/problems/add-binary/#/description)
+
+Result: [Add Binary](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/addBinary.py)
