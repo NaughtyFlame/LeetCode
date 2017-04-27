@@ -21,3 +21,5 @@
 * [53 Maximum Subarray](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/Catalogue.mdown#53-maximum-subarray)
 * [58 Length of Last Word](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/Catalogue.mdown#58-length-of-last-word)
 * [66 Plus One](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/Catalogue.mdown#66-plus-one)
+* [67 Add Binary](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/Catalogue.mdown#67-add-binary)
+* [69 Sqrt(x)](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/Catalogue.mdown#69-sqrtx)
