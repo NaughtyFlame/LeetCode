@@ -258,3 +258,7 @@ For example,
 Given **1->1->2**, return **1->2**.
 
 Given **1->1->2->3->**3, return **1->2->3**.
+
+[view in leetcode](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/)
+
+[Solution](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/083_Remove_Duplicates_1.py)
