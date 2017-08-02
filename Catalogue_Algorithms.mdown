@@ -25,7 +25,7 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 **Input**: (2 -> 4 -> 3) + (5 -> 6 -> 4)
 **Output**: 7 -> 0 -> 8
 
-**题目理解**：累加的函数，链表的头是个位，以此类推。例子按照十进制加减就是：342 + 465 =807。在实现过程中，注意进位。 
+**题目理解**：累加的函数，链表的头是个位，以此类推。例子按照十进制加减就是：342 + 465 =807。在实现过程中，注意进位。
 Result:[Add Two Numbers](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/addTwoNumbers.py)
 
 ## 7 Reverse Integer
@@ -36,7 +36,7 @@ Reverse digits of an integer.
 **Example2**: x = -123, return -321
 
 **Note**:
-The input is assumed to be a 32-bit signed integer. Your function should **return 0 when the reversed integer overflows**. 
+The input is assumed to be a 32-bit signed integer. Your function should **return 0 when the reversed integer overflows**.
 
 **题目理解**：这里要注意有个 integer overflows。
 
@@ -63,10 +63,10 @@ Input is guaranteed to be within the range from 1 to 3999.
 
 Result:[Roman to Integer](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/romanToint.py)
 
-## 14 Longest Common Prefix 
+## 14 Longest Common Prefix
 
 ### Description
-Write a function to find the longest common prefix string amongst an array of strings. 
+Write a function to find the longest common prefix string amongst an array of strings.
 
 Result:[Longest Common Prefix](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/LongestCommonPrefix.py)
 
@@ -89,16 +89,16 @@ Merge two sorted linked lists and return it as a new list. The new list should b
 
 Result：[Merge Two Sorted Lists](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/MergeTwoSortedLists.py)
 
-## 26 Remove Duplicates from Sorted Array 
+## 26 Remove Duplicates from Sorted Array
 
 ### Description
 Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length.
 **Do not allocate extra space for another array, you must do this in place with constant memory.**
 
 For example,
-Given input array *nums = [1,1,2]*, 
+Given input array *nums = [1,1,2]*,
 
-Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively. It doesn't matter what you leave beyond the new length. 
+Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively. It doesn't matter what you leave beyond the new length.
 
 Result:[Remove Duplicates from Sorted Array](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/RmDuplicatesFSortedArray.py)
 
@@ -192,7 +192,7 @@ If the last word does not exist, return 0.
 
 **Note:** A word is defined as a character sequence consists of non-space characters only.
 
-For example, 
+For example,
 Given s = **"Hello World"**,
 return **5**.
 
@@ -209,7 +209,7 @@ The digits are stored such that the most significant digit is at the head of the
 
 Result: [Plus One](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/PlusOne.py)
 
-## 67 Add Binary 
+## 67 Add Binary
 
 ### Description
 Given two binary strings, return their sum (also a binary string).
@@ -247,3 +247,14 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
 [view in Leetcode](https://leetcode.com/problems/climbing-stairs/#/description)
 
 Result: [Climbing Stairs](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/climbStairs.py)
+
+## 83 Remove Duplicates from Sorted List
+
+### Description
+Given a sorted linked list, delete all duplicates such that each element appear only once.
+
+For example,
+
+Given **1->1->2**, return **1->2**.
+
+Given **1->1->2->3->**3, return **1->2->3**.
