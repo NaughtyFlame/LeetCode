@@ -298,4 +298,4 @@ In this case, no transaction is done, i.e. max profit = 0.
 **理解**
 需要保存的值为最小值min和最大差值，如果当前值小于min，则进行替换，如果大于当前值，则进行相减并比较最大差值。
 
-[result]:(https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/Best_time_Stock.py)
+[Solution](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/Best_time_Stock.py)
