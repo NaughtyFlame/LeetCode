@@ -325,3 +325,24 @@ Design an algorithm to find the maximum profit. You may complete as many transac
 **[3,2,1]**
 
 [Solution](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/Best_time_Stock_2.py)
+
+## 125 Valid Palindrome
+
+### Description 
+Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+
+For example,
+**"A man, a plan, a canal: Panama"** is a palindrome.
+**"race a car"** is not a palindrome.
+
+**Note:**
+Have you consider that the string might be empty? This is a good question to ask during an interview.
+
+For the purpose of this problem, we define empty string as valid palindrome.
+
+**思考**
+
+普通的回文问题，需要做的是忽略特殊字符，然后一头一尾回文匹配。
+
+[Solution](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/Valid_Palindrome.py)
+
