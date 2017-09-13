@@ -346,3 +346,30 @@ For the purpose of this problem, we define empty string as valid palindrome.
 
 [Solution](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/Valid_Palindrome.py)
 
+## Single Number
+
+### Description 
+Given an array of integers, every element appears twice except for one. Find that single one.
+
+**Note:**
+Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
+
+**思考**
+
+这里有一个讨巧的方式，x异或x为0，而任何数异或0得到本身。
+
+## 141 Linked List Cycle
+
+### Description
+Given a linked list, determine if it has a cycle in it.
+
+Follow up:
+Can you solve it without using extra space?
+
+**思考**
+
+常规算法：
+设定两个指针a与b，a每走一步b从头开始走，若b = a.next 则说明此链表有环。若a = b说明还没有判断出是否有环，a再走一步，b从头开始。当a.next = None 则说明此链表没有环。时间复杂度为 O(n^2)
+
+改善版：
+同样设定两个指针a与b，a的速度为b的两倍。如果这个链表有环...他们总有一天会相遇的😳。时间复杂度为O(n)。
