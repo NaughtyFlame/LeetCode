@@ -299,3 +299,29 @@ In this case, no transaction is done, i.e. max profit = 0.
 需要保存的值为最小值min和最大差值，如果当前值小于min，则进行替换，如果大于当前值，则进行相减并比较最大差值。
 
 [Solution](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/Best_time_Stock.py)
+
+## 122 Best Time to Buy and Sell Stock II
+
+### Description
+Say you have an array for which the ith element is the price of a given stock on day i.
+
+Design an algorithm to find the maximum profit. You may complete as many transactions as you like (ie, buy one and sell one share of the stock multiple times). However, you may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
+
+**理解**
+
+与上一题不同的是，这里可以进行多次买卖，来进行最大的收益。与真实的股票买卖不同，这里没有本金的概念，每次出入一份，而且入的时候须保证手上没有元素。
+
+**思考**
+
+通用算法为：
+选取一个min 如果碰到更小则进行替换，碰到当前值下一位是减小的情况下进行差值计算，并累积这个差值。
+经过思考，更新算法：
+保存一个low值，一个为high值。
+如果当前元素比low小，则替换low，如果当前元素比high大则替换high，如果比high小，说明上一个值已经是上个阶段的最大值，此时进行profit计算，并把low与high值赋值为当前值。
+
+### 实例
+**[2,1,3,5,2,7]**
+
+**[3,2,1]**
+
+[Solution](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/Best_time_Stock_2.py)
