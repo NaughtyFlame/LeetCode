@@ -422,4 +422,14 @@ begin to intersect at node c1.
 **Credits:**
 Special thanks to [@stellari](https://oj.leetcode.com/discuss/user/stellari) for adding this problem and creating all test cases.
 
+**思考**
+
+基础思路：
+遍历两条链表记录长度，计算差值，然后让长的那条线走几步，指针相同的时候就是节点。如果末尾不同就是没有节点。
+
+进阶思路：
+当指针走到末尾的时候，从另一条链表的开头开始继续移动，这样会导致两种情况：
+1. 在节点处相遇
+2. 同时到达对方的末尾
+因为它们走过的路程是一样的。
 
