@@ -374,7 +374,7 @@ Can you solve it without using extra space?
 改善版：
 同样设定两个指针a与b，a的速度为b的两倍。如果这个链表有环...他们总有一天会相遇的😳。时间复杂度为O(n)。
 
-## Min Stack
+## 155 Min Stack
 
 ### Description
 Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
@@ -433,3 +433,48 @@ Special thanks to [@stellari](https://oj.leetcode.com/discuss/user/stellari) for
 2. 同时到达对方的末尾
 因为它们走过的路程是一样的。
 
+## 167 Two Sum II - Input array is sorted
+
+### Description
+
+Given an array of integers that is already **sorted in ascending order**, find two numbers such that they add up to a specific target number.
+
+The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2. Please note that your returned answers (both index1 and index2) are not zero-based.
+
+You may assume that each input would have exactly one solution and you may not use the same element twice.
+
+**Input**: numbers={2, 7, 11, 15}, target=9
+**Output**: index1=1, index2=2
+
+**思考**
+
+这个题目可以用暴力算法来求解的，但是又更忧解，我的想法是用哈希表。key为需要匹配的数（也就是 tagart减去本身），value保存这个值的index（注意题目 输出的index比实际大1）。进行遍历，如果当前值不在哈希表中，则建立新的一行。如果在哈希表中找到这个key，则输出value和这个数在列表中的index。
+
+## 168 Excel Sheet Column Title
+
+### Description 
+
+Given a positive integer, return its corresponding column title as appear in an Excel sheet.
+
+For example:
+```
+1 -> A
+    2 -> B
+    3 -> C
+    ...
+    26 -> Z
+    27 -> AA
+    28 -> AB 
+```
+**思考**
+十进制和26进制的转换。注意转换之后是从A开始的，不是零。在求余数的时候注意要减去1。然后用ASCII码进行转换。
+
+## 169 Majority Element
+
+### Description
+Given an array of size n, find the majority element. The majority element is the element that appears **more than** ⌊ n/2 ⌋ times.
+
+You may assume that the array is non-empty and the majority element always exist in the array.
+
+**Credits**:
+Special thanks to [@ts](https://oj.leetcode.com/discuss/user/ts) for adding this problem and creating all test cases.
