@@ -467,6 +467,7 @@ For example:
     28 -> AB 
 ```
 **思考**
+
 十进制和26进制的转换。注意转换之后是从A开始的，不是零。在求余数的时候注意要减去1。然后用ASCII码进行转换。
 
 ## 169 Majority Element
@@ -478,3 +479,62 @@ You may assume that the array is non-empty and the majority element always exist
 
 **Credits**:
 Special thanks to [@ts](https://oj.leetcode.com/discuss/user/ts) for adding this problem and creating all test cases.
+
+用哈希表保存数字的计数。
+
+## 171 Excel Sheet Column Number
+
+### Description 
+
+Given a column title as appear in an Excel sheet, return its corresponding column number.
+
+For example:
+```
+    A -> 1
+    B -> 2
+    C -> 3
+    ...
+    Z -> 26
+    AA -> 27
+    AB -> 28 
+```
+
+## 172 Factorial Trailing Zeroes 
+
+### Description
+
+Given an integer n, return the number of trailing zeroes in n!.
+
+**Note**: Your solution should be in logarithmic time complexity.
+
+数5的个数。
+
+## 189 Rotate Array
+
+### Description
+
+Rotate an array of n elements to the right by k steps.
+
+For example, with n = 7 and k = 3, the array **[1,2,3,4,5,6,7]** is rotated to **[5,6,7,1,2,3,4]**.
+
+**Note**:
+Try to come up as many solutions as you can, there are at least 3 different ways to solve this problem.
+
+## 190 Reverse Bits
+
+### Description
+
+Reverse bits of a given 32 bits unsigned integer.
+
+For example, given input 43261596 (represented in binary as 00000010100101000001111010011100), return 964176192 (represented in binary as 00111001011110000010100101000000).
+
+## 191 Number of 1 Bits
+
+### Description
+
+Write a function that takes an unsigned integer and returns the number of ’1' bits it has (also known as the Hamming weight).
+
+For example, the 32-bit integer ’11' has binary representation 00000000000000000000000000001011, so the function should return 3.
+
+Hamming Weight 有好多中算法。具体并没有研究。 普通的位操作并不能通过效率检测。
+
