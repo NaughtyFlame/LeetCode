@@ -26,7 +26,7 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 **Output**: 7 -> 0 -> 8
 
 **题目理解**：累加的函数，链表的头是个位，以此类推。例子按照十进制加减就是：342 + 465 =807。在实现过程中，注意进位。
-Result:[Add Two Numbers](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/addTwoNumbers.py)
+Result:[Add Two Numbers](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/0-99/2_addTwoNumbers.py)
 
 ## 7 Reverse Integer
 
@@ -40,7 +40,7 @@ The input is assumed to be a 32-bit signed integer. Your function should **retur
 
 **题目理解**：这里要注意有个 integer overflows。
 
-Result:[Reverse Integer](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/reverse_integer.py)
+Result:[Reverse Integer](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/0-99/7_reverse_integer.py)
 
 ## 9 Palindrome Number
 
@@ -51,7 +51,7 @@ Determine whether an integer is a palindrome. Do this without extra space.
 
 [click to show spoilers.](https://leetcode.com/problems/palindrome-number/#/description)
 
-Result:[Palindrome Number](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/palindromeNumber.py)
+Result:[Palindrome Number](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/0-99/9_palindromeNumber.py)
 
 ## 13 Roman to Integer
 
@@ -61,14 +61,14 @@ Input is guaranteed to be within the range from 1 to 3999.
 
 **题目理解**: 将罗马数字转换成整型数字。首先要理解罗马数字的计算方式。大数左边的为减右边是加。
 
-Result:[Roman to Integer](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/romanToint.py)
+Result:[Roman to Integer](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/0-99/13_romanToint.py)
 
 ## 14 Longest Common Prefix
 
 ### Description
 Write a function to find the longest common prefix string amongst an array of strings.
 
-Result:[Longest Common Prefix](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/LongestCommonPrefix.py)
+Result:[Longest Common Prefix](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/0-99/14_LongestCommonPrefix.py)
 
 ## 20 Valid Parentheses
 
@@ -78,7 +78,7 @@ The brackets must close in the correct order, "()" and "()[]{}" are all valid bu
 
 **题目理解**：这道题用栈的方式实现，遍历字符串，检验到左括号入栈，检验到右括号时，出栈检验是否匹配，最后检验栈是否为空，排除右括号缺失的情况。
 
-Result:[Valid Parentheses](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/ValidParentheses.py)
+Result:[Valid Parentheses](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/0-99/20_ValidParentheses.py)
 
 ## 21 Merge Two Sorted Lists
 
@@ -87,7 +87,7 @@ Merge two sorted linked lists and return it as a new list. The new list should b
 
 **题目理解** 合并两个有序链表，合成的列表也是有序的。方法是，创建一个新的节点，穿插连接两个输入链表。
 
-Result：[Merge Two Sorted Lists](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/MergeTwoSortedLists.py)
+Result：[Merge Two Sorted Lists](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/0-99/21_MergeTwoSortedLists.py)
 
 ## 26 Remove Duplicates from Sorted Array
 
@@ -100,7 +100,7 @@ Given input array *nums = [1,1,2]*,
 
 Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively. It doesn't matter what you leave beyond the new length.
 
-Result:[Remove Duplicates from Sorted Array](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/RmDuplicatesFSortedArray.py)
+Result:[Remove Duplicates from Sorted Array](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/0-99/26_RmDuplicatesFSortedArray.py)
 
 ## 27 Remove Element
 
@@ -118,7 +118,7 @@ Your function should return length = 2, with the first two elements of nums bein
 
 **题目理解**：和[26 Remove Duplicates from Sorted Array](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/Catalogue.mdown#26-remove-duplicates-from-sorted-array) 类似，在原列表中设置两个指针，一个进行遍历，另一个进行赋值并计算新的length
 
-Result:[Remove Element](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/RemoveElement.py)
+Result:[Remove Element](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/0-99/27_RemoveElement.py)
 
 ## 28 Implement strStr()
 
@@ -129,7 +129,7 @@ Returns the index of the first occurrence of needle in haystack, or -1 if needle
 
 **题目理解**: 简单的算法，复杂度O(n^2),可以使用kmp算法将复杂度降至O(n)
 
-Result:[Implement strStr()](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/strStr.py)
+Result:[Implement strStr()](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/0-99/28_strStr.py)
 
 ## 35 Search Insert Position
 
@@ -149,7 +149,7 @@ Here are few examples.
 
 [View in Leetcode](https://leetcode.com/problems/search-insert-position/#/description)
 
-Result: [Search Insert Position](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/SearchInsert.py)
+Result: [Search Insert Position](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/0-99/35_SearchInsert.py)
 
 ## 38 Count and Say
 
@@ -171,7 +171,7 @@ Note: The sequence of integers will be represented as a string.
 
 [View in Leetcode](https://leetcode.com/problems/count-and-say/#/description)
 
-Result: [Count and Say](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/CountAndSay.py)
+Result: [Count and Say](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/0-99/38_CountAndSay.py)
 
 ## 53 Maximum Subarray
 
@@ -181,7 +181,7 @@ Find the contiguous subarray within an array (containing at least one number) wh
 For example, given the array [-2,1,-3,4,-1,2,1,-5,4],
 the contiguous subarray [4,-1,2,1] has the largest sum = 6.
 
-[Maximum Subarray](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/maxSubArray.py)
+[Maximum Subarray](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/0-99/53_maxSubArray.py)
 
 ## 58 Length of Last Word
 
@@ -196,7 +196,7 @@ For example,
 Given s = **"Hello World"**,
 return **5**.
 
-Result: [Length of Last Word](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/LenLastWord.py)
+Result: [Length of Last Word](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/0-99/58_LenLastWord.py)
 
 ## 66 Plus One
 
@@ -207,7 +207,7 @@ You may assume the integer do not contain any leading zero, except the number 0 
 
 The digits are stored such that the most significant digit is at the head of the list.
 
-Result: [Plus One](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/PlusOne.py)
+Result: [Plus One](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/0-99/66_PlusOne.py)
 
 ## 67 Add Binary
 
@@ -221,7 +221,7 @@ Return "100".
 
 [view in Leetcode](https://leetcode.com/problems/add-binary/#/description)
 
-Result: [Add Binary](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/addBinary.py)
+Result: [Add Binary](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/0-99/67_addBinary.py)
 
 ## 69 Sqrt(x)
 
@@ -233,7 +233,7 @@ Compute and return the square root of x.
 
 分析：此题需要返回的值是int形式的，所以用二分法最为合适，如果计算float格式平方根，可以使用牛顿迭代法。
 
-Result: [Sqrt(x)](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/mysqrt_1.py)
+Result: [Sqrt(x)](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/0-99/69_mysqrt_1.py)
 
 ## 70 Climbing Stairs
 
@@ -246,7 +246,7 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
 
 [view in Leetcode](https://leetcode.com/problems/climbing-stairs/#/description)
 
-Result: [Climbing Stairs](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/climbStairs.py)
+Result: [Climbing Stairs](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/0-99/70_climbStairs.py)
 
 ## 83 Remove Duplicates from Sorted List
 
@@ -261,7 +261,7 @@ Given **1->1->2->3->**3, return **1->2->3**.
 
 [view in leetcode](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/)
 
-[Solution](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/083_Remove_Duplicates_1.py)
+[Solution](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/0-99/083_Remove_Duplicates_1.py)
 
 ## 88 Merge Sorted Array
 Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.
@@ -272,11 +272,11 @@ You may assume that nums1 has enough space (size that is greater or equal to m +
 
 [view in leetcode](https://leetcode.com/problems/merge-sorted-array/description/)
 
-[Solution](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/088_Merge_Sorted_Array.py)
+[Solution](https://github.com/NaughtyFlame/LeetCode/tree/master/Algorithms/0-99/088_Merge_Sorted_Array.py)
 
 ## 121 Best Time to Buy and Sell Stock
 
-### Description 
+### Description
 Say you have an array for which the ith element is the price of a given stock on day i.
 If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an algorithm to find the maximum profit.
 
@@ -298,7 +298,7 @@ In this case, no transaction is done, i.e. max profit = 0.
 **理解**
 需要保存的值为最小值min和最大差值，如果当前值小于min，则进行替换，如果大于当前值，则进行相减并比较最大差值。
 
-[Solution](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/Best_time_Stock.py)
+[Solution](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/100-199/121_Best_time_Stock.py)
 
 ## 122 Best Time to Buy and Sell Stock II
 
@@ -324,11 +324,11 @@ Design an algorithm to find the maximum profit. You may complete as many transac
 
 **[3,2,1]**
 
-[Solution](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/Best_time_Stock_2.py)
+[Solution](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/100-199/122_Best_time_Stock_2.py)
 
 ## 125 Valid Palindrome
 
-### Description 
+### Description
 Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
 
 For example,
@@ -344,11 +344,11 @@ For the purpose of this problem, we define empty string as valid palindrome.
 
 普通的回文问题，需要做的是忽略特殊字符，然后一头一尾回文匹配。
 
-[Solution](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/Valid_Palindrome.py)
+[Solution](https://github.com/NaughtyFlame/LeetCode/blob/master/Algorithms/100-199/125_Valid_Palindrome.py)
 
 ## Single Number
 
-### Description 
+### Description
 Given an array of integers, every element appears twice except for one. Find that single one.
 
 **Note:**
@@ -402,7 +402,7 @@ minStack.getMin();   --> Returns -2.
 
 ## 160 Intersection of Two Linked Lists
 
-### Description 
+### Description
 
 Write a program to find the node at which the intersection of two singly linked lists begins.
 For example, the following two linked lists:
@@ -452,7 +452,7 @@ You may assume that each input would have exactly one solution and you may not u
 
 ## 168 Excel Sheet Column Title
 
-### Description 
+### Description
 
 Given a positive integer, return its corresponding column title as appear in an Excel sheet.
 
@@ -464,7 +464,7 @@ For example:
     ...
     26 -> Z
     27 -> AA
-    28 -> AB 
+    28 -> AB
 ```
 **思考**
 
@@ -484,7 +484,7 @@ Special thanks to [@ts](https://oj.leetcode.com/discuss/user/ts) for adding this
 
 ## 171 Excel Sheet Column Number
 
-### Description 
+### Description
 
 Given a column title as appear in an Excel sheet, return its corresponding column number.
 
@@ -496,10 +496,10 @@ For example:
     ...
     Z -> 26
     AA -> 27
-    AB -> 28 
+    AB -> 28
 ```
 
-## 172 Factorial Trailing Zeroes 
+## 172 Factorial Trailing Zeroes
 
 ### Description
 
@@ -537,4 +537,3 @@ Write a function that takes an unsigned integer and returns the number of ’1' 
 For example, the 32-bit integer ’11' has binary representation 00000000000000000000000000001011, so the function should return 3.
 
 Hamming Weight 有好多中算法。具体并没有研究。 普通的位操作并不能通过效率检测。
-
