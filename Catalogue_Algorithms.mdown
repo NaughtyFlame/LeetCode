@@ -609,3 +609,13 @@ Return: 1 --> 2 --> 3 --> 4 --> 5
 
 简单的单向链表元素删除，对于链表头的删除，是一种特例，可以为链表头前加一个辅助的节点，数值任意，最后返回的值是head.next,也就是去除辅助节点。而对于删除来说需要做的是设定两个指针，一前一后。当后指针的值等于val，则前指针的next等于后指针的next。
 
+
+## 204 Count Primes
+
+### Description
+
+Description:
+
+Count the number of prime numbers less than a non-negative number, n.
+
+这里有好多解法。普通算法的时间复杂度很高，还有一个种算法叫做[埃拉托斯特尼筛法](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)。但是用这种筛选法用python来实现在leetcode上有TLE问题的。答案种提供了另外一种优化。可以看一下。
