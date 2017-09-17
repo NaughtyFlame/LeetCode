@@ -579,3 +579,33 @@ For example, the 32-bit integer ’11' has binary representation 000000000000000
 
 Hamming Weight 有好多中算法。具体并没有研究。 普通的位操作并不能通过效率检测。
 
+## 202 Happy Number
+
+### Description
+
+Write an algorithm to determine if a number is "happy".
+
+A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. Those numbers for which this process ends in 1 are happy numbers.
+
+Example: 19 is a happy number
+
+1^2 + 9^2 = 82
+8^2 + 2^2 = 68
+6^2 + 8^2 = 100
+1^2 + 0^2 + 0^2 = 1
+
+**思考**
+如果不是开心数，那么计算的sum一定是一个循环。建立一个stack，存放计算出的sum，一旦新计算出来的sum已经在stack中，则说明这个数不是开心数。反之，一旦sum为1， 那么这个数为开心数。
+
+## 203 Remove Linked List Elements
+
+### Description
+
+Remove all elements from a linked list of integers that have value val.
+
+Example
+Given: 1 --> 2 --> 6 --> 3 --> 4 --> 5 --> 6, val = 6
+Return: 1 --> 2 --> 3 --> 4 --> 5
+
+简单的单向链表元素删除，对于链表头的删除，是一种特例，可以为链表头前加一个辅助的节点，数值任意，最后返回的值是head.next,也就是去除辅助节点。而对于删除来说需要做的是设定两个指针，一前一后。当后指针的值等于val，则前指针的next等于后指针的next。
+
