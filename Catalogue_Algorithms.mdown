@@ -619,3 +619,95 @@ Description:
 Count the number of prime numbers less than a non-negative number, n.
 
 这里有好多解法。普通算法的时间复杂度很高，还有一个种算法叫做[埃拉托斯特尼筛法](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)。但是用这种筛选法用python来实现在leetcode上有TLE问题的。答案种提供了另外一种优化。可以看一下。
+
+## 205 Isomorphic Strings
+
+### Description
+
+Given two strings s and t, determine if they are isomorphic.
+
+Two strings are isomorphic if the characters in s can be replaced to get t.
+
+All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character but a character may map to itself.
+
+For example,
+Given **"egg"**, **"add"**, return true.
+
+Given **"foo"**, **"bar"**, return false.
+
+Given **"paper"**, **"title"**, return true.
+
+这里不需要做替换。只需要建立的hash表，看每一个字符是否有对应。需要注意的是，不仅key的值是唯一的，也要注意value的值也是要唯一的。
+
+## 206 Reverse Linked List
+
+### Description
+
+Reverse a singly linked list.
+
+solution 用了递归的思想。需要加强这方面的思想。
+
+## 217 Contains Duplicate
+
+### Description
+
+Given an array of integers, find if the array contains any duplicates. Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.
+
+用哈希表的方式会TLE，所以使用了先排序后比较前后值，复杂就依赖于排序算法了。
+
+## 219 Contains Duplicate II
+
+### Description 
+
+Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that **nums[i]** = **nums[j]** and the **absolute** difference between i and j is at most k.
+
+用哈希表来储存index，如果已经存在则进行比较。如果小于k，则返回True，反之覆盖原来的index。
+
+## 225 Implement Stack using Queues
+
+### Description
+
+Implement the following operations of a stack using queues.
+
+push(x) -- Push element x onto stack.
+pop() -- Removes the element on top of the stack.
+top() -- Get the top element.
+empty() -- Return whether the stack is empty.
+**Notes:**
+You must use only standard operations of a queue -- which means only push to back, peek/pop from front, size, and is empty operations are valid.
+Depending on your language, queue may not be supported natively. You may simulate a queue by using a list or deque (double-ended queue), as long as you use only standard operations of a queue.
+You may assume that all operations are valid (for example, no pop or top operations will be called on an empty stack).
+
+可以使用双端队列就很简单啦。python初始双端队列的方式要知道。
+
+## Invert Binary Tree
+
+### Description
+
+Invert a binary tree.
+```
+
+     4
+   /   \
+  2     7
+ / \   / \
+1   3 6   9
+to
+     4
+   /   \
+  7     2
+ / \   / \
+9   6 3   1
+```
+
+常规思路就是递归。同样也可以使用栈的方式去实现。
+
+## Power of Two
+
+### Description
+
+Given an integer, write a function to determine if it is a power of two.
+
+依旧可以使用递归思想。还有一种巧妙的方式：如果 n为2的次方，那么二进制 n与n-1 为 0.
+n
+
