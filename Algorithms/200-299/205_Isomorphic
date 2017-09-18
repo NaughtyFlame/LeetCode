@@ -1,0 +1,21 @@
+class Solution(object):
+    def isIsomorphic(self, s, t):
+        """
+        :type s: str
+        :type t: str
+        :rtype: bool
+        """
+        if len(s) != len(t):
+            return False
+        
+        hash_string = {}
+        
+        for index in range(len(s)):
+            if not hash_string.has_key(s[index]):                
+                if t[index] in hash_string.values():
+                    return False
+                hash_string[s[index]] = t[index]
+            else:
+                if t[index] != hash_string.get(s[index]):
+                    return False
+        return True
