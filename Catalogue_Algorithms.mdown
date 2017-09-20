@@ -739,10 +739,54 @@ Could you do it in O(n) time and O(1) space?
 **思考**
 单向链表查找父级元素比较复杂。可以选择list来储存值来进行比较。一种是全部储存到list，这样的空间复杂度为O(n)，一种是存储一半，用链表和list进行比较。空间复杂度为(n/2)。这里提供一个找到中点的方式：设置两个指针，一个指针每次走一位，一个指针一次走两位，当快的指针到尾端时，慢的指针在中点。对与题目中的follow up， 空间复杂度为O(1)，那么只能用到指针了。做法是将后半段逆序处理，然后逐一比较。
 
+## 235 Lowest Common Ancestor of a Binary Search Tree
 
+### Description
 
+Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
 
+According to the [definition of LCA on Wikipedia](https://en.wikipedia.org/wiki/Lowest_common_ancestor): “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w as descendants (where we allow **a node to be a descendant of itself**).”
 
+```
+        _______6______
+       /              \
+    ___2__          ___8__
+   /      \        /      \
+   0      _4       7       9
+         /  \
+         3   5
+```
 
+For example, the lowest common ancestor (LCA) of nodes 2 and 8 is 6. Another example is LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.
+
+**思考** 
+
+因为是二叉搜索树，所以只需要比较val，p，q在node异侧则说明node为公共祖先。
+
+## 237 Delete Node in a Linked List
+
+### Description
+
+Write a function to delete a node (except the tail) in a singly linked list, given only access to that node.
+
+Supposed the linked list is 1 -> 2 -> 3 -> 4 and you are given the third node with value 3, the linked list should become 1 -> 2 -> 4 after calling your function.
+
+## 242 Valid Anagram
+
+### Description
+
+Given two strings s and t, write a function to determine if t is an anagram of s.
+
+For example,
+s = "anagram", t = "nagaram", return true.
+s = "rat", t = "car", return false.
+
+Note:
+You may assume the string contains only lowercase alphabets.
+
+Follow up:
+What if the inputs contain unicode characters? How would you adapt your solution to such case?
+
+转化成list，排序再进行比对。
 
 
