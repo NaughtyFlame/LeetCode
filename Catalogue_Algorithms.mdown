@@ -680,7 +680,7 @@ You may assume that all operations are valid (for example, no pop or top operati
 
 可以使用双端队列就很简单啦。python初始双端队列的方式要知道。
 
-## Invert Binary Tree
+## 226 Invert Binary Tree
 
 ### Description
 
@@ -702,12 +702,47 @@ to
 
 常规思路就是递归。同样也可以使用栈的方式去实现。
 
-## Power of Two
+## 231 Power of Two
 
 ### Description
 
 Given an integer, write a function to determine if it is a power of two.
 
 依旧可以使用递归思想。还有一种巧妙的方式：如果 n为2的次方，那么二进制 n与n-1 为 0.
-n
+
+## 232 Implement Queue using Stacks
+
+### Description
+
+Implement the following operations of a queue using stacks.
+
+- push(x) -- Push element x to the back of queue.
+- pop() -- Removes the element from in front of queue.
+- peek() -- Get the front element.
+- empty() -- Return whether the queue is empty.
+
+**Notes:**
+
+- You must use only standard operations of a stack -- which means only push to top, peek/pop from top, size, and is empty operations are valid.
+- Depending on your language, stack may not be supported natively. You may simulate a stack by using a list or deque (double-ended queue), as long as you use only standard operations of a stack.
+- You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).
+
+## 234 Palindrome Linked List
+
+### Description
+
+Given a singly linked list, determine if it is a palindrome.
+
+Follow up:
+Could you do it in O(n) time and O(1) space?
+
+**思考**
+单向链表查找父级元素比较复杂。可以选择list来储存值来进行比较。一种是全部储存到list，这样的空间复杂度为O(n)，一种是存储一半，用链表和list进行比较。空间复杂度为(n/2)。这里提供一个找到中点的方式：设置两个指针，一个指针每次走一位，一个指针一次走两位，当快的指针到尾端时，慢的指针在中点。对与题目中的follow up， 空间复杂度为O(1)，那么只能用到指针了。做法是将后半段逆序处理，然后逐一比较。
+
+
+
+
+
+
+
 
