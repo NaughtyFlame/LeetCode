@@ -868,3 +868,50 @@ For example, if there are 4 stones in the heap, then you will never win the game
 
 只要不是4的倍数就能赢。。
 
+
+## 303 Range Sum Query - Immutable
+
+### Description
+
+Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j), inclusive.
+
+**Example:**
+
+Given nums = [-2, 0, 3, -5, 2, -1]
+
+sumRange(0, 2) -> 1
+sumRange(2, 5) -> -1
+sumRange(0, 5) -> -3
+
+**Note:**
+
+1. You may assume that the array does not change.
+2. There are many calls to sumRange function.
+
+为了防止TLE，在初始object的时候，计算出前n个数的和，这样在调用的时候，可以利用减法直接得出结论。
+
+## 326 Power of Three
+
+Given an integer, write a function to determine if it is a power of three.
+
+Follow up:
+Could you do it without using any loop / recursion?
+
+方法一：数学方法， x = log(n)/log(3)
+方法二：利用计算机的特性，算出float范围中，最大的3的倍数幂数。
+
+## 342
+
+### Description
+
+Given an integer (signed 32 bits), write a function to check whether it is a power of 4.
+
+Example:
+Given num = 16, return true. Given num = 5, return false.
+
+Follow up: Could you solve it without loops/recursion?
+
+进行位运算。判断1是不是在奇数位。
+
+
+
