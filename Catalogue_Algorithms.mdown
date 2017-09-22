@@ -900,7 +900,7 @@ Could you do it without using any loop / recursion?
 方法一：数学方法， x = log(n)/log(3)
 方法二：利用计算机的特性，算出float范围中，最大的3的倍数幂数。
 
-## 342
+## 342 Power of Four
 
 ### Description
 
@@ -912,6 +912,160 @@ Given num = 16, return true. Given num = 5, return false.
 Follow up: Could you solve it without loops/recursion?
 
 进行位运算。判断1是不是在奇数位。
+
+## 344 Reverse String
+
+### Description
+
+Write a function that takes a string as input and returns the string reversed.
+
+**Example**:
+Given s = "hello", return "olleh".
+
+## 345 Reverse Vowels of a String
+
+### Description
+
+Write a function that takes a string as input and reverse only the vowels of a string.
+
+**Example 1**:
+Given s = "hello", return "holle".
+
+**Example 2**:
+Given s = "leetcode", return "leotcede".
+
+**Note**:
+The vowels does not include the letter "y".
+
+
+## 349 Intersection of Two Arrays
+
+### Description
+
+Given two arrays, write a function to compute their intersection.
+
+**Example**:
+Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2].
+
+**Note**:
+* Each element in the result must be unique.
+* The result can be in any order.
+
+这里求的是集合，并不是匹配列表呢。python有集合处理的function，使用set把列表转换成集，然后进行逻辑运算。
+
+## 350 Intersection of Two Arrays
+
+### Description
+
+Given two arrays, write a function to compute their intersection.
+
+**Example**:
+Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].
+
+**Note**:
+
+Each element in the result should appear as many times as it shows in both arrays.
+The result can be in any order.
+**Follow up**:
+* What if the given array is already sorted? How would you optimize your algorithm?
+* What if nums1's size is small compared to nums2's size? Which algorithm is better?
+* What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the * * memory at once?
+
+数组元素计数的问题，都比较推荐用哈希表去计数。
+
+## 367 Valid Perfect Square
+
+### Description
+
+Given a positive integer num, write a function which returns True if num is a perfect square else False.
+
+Note: Do not use any built-in library function such as sqrt.
+
+**Example 1**:
+```
+Input: 16
+Returns: True
+```
+**Example 2**:
+```
+Input: 14
+Returns: False
+```
+
+可以用二分查找。O(lgN)
+
+## 371 Sum of Two Integers
+
+### Description
+
+Calculate the sum of two integers a and b, but you are **not allowed** to use the operator + and -.
+
+**Example**:
+Given a = 1 and b = 2, return 3.
+
+利用位运算进行加法运算，python没能实现，用了c++。
+
+## 374 Guess Number Higher or Lower
+
+### Description
+
+We are playing the Guess Game. The game is as follows:
+
+I pick a number from 1 to n. You have to guess which number I picked.
+
+Every time you guess wrong, I'll tell you whether the number is higher or lower.
+
+You call a pre-defined API guess(int num) which returns 3 possible results (-1, 1, or 0):
+```
+-1 : My number is lower
+ 1 : My number is higher
+ 0 : Congrats! You got it!
+ ```
+**Example**:
+```
+n = 10, I pick 6.
+
+Return 6.
+```
+
+利用二分查找猜测数字大小。
+
+## 383 Ransom Note
+
+### Description
+
+Given an arbitrary ransom note string and another string containing letters from all the magazines, write a function that will return true if the ransom note can be constructed from the magazines ; otherwise, it will return false.
+
+Each letter in the magazine string can only be used once in your ransom note.
+
+Note:
+You may assume that both strings contain only lowercase letters.
+```
+canConstruct("a", "b") -> false
+canConstruct("aa", "ab") -> false
+canConstruct("aa", "aab") -> true
+```
+
+用哈希表记录字母出现的次数，进行验证。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
