@@ -1126,6 +1126,82 @@ The 11th digit of the sequence 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ... is a 0, wh
 
 要注意n的起始值。
 
+## 401 Binary Watch
+
+### Description
+
+A binary watch has 4 LEDs on the top which represent the hours (0-11), and the 6 LEDs on the bottom represent the minutes (0-59).
+
+Each LED represents a zero or one, with the least significant bit on the right.
+
+Given a non-negative integer n which represents the number of LEDs that are currently on, return all possible times the watch could represent.
+
+**Example**:
+```
+Input: n = 1
+Return: ["1:00", "2:00", "4:00", "8:00", "0:01", "0:02", "0:04", "0:08", "0:16", "0:32"]
+```
+**Note**:
+* The order of output does not matter.
+* The hour must not contain a leading zero, for example "01:00" is not valid, it should be "1:00".
+* The minute must be consist of two digits and may contain a leading zero, for example "10:2" is not valid, it should be "10:02".
+
+在遍历的可能性小的情况下，可以选择枚举比较，符合条件的入栈。这里需要掌握的是bin()函数，转换数字为二进制string，已经count()数string中char的数量。
+
+## 404 Sum of Left Leaves
+
+### Description
+
+Find the sum of all left leaves in a given binary tree.
+
+**Example**:
+```
+    3
+   / \
+  9  20
+    /  \
+   15   7
+
+There are two left leaves in the binary tree, with values 9 and 15 respectively. Return 24.
+```
+
+## Convert a Number to Hexadecimal
+
+### Description
+
+Given an integer, write an algorithm to convert it to hexadecimal. For negative integer, two’s complement method is used.
+
+**Note**:
+
+1. All letters in hexadecimal (a-f) must be in lowercase.
+2. The hexadecimal string must not contain extra leading 0s. If the number is zero, it is represented by a single zero character '0'; otherwise, the first character in the hexadecimal string will not be the zero character.
+3. The given number is guaranteed to fit within the range of a 32-bit signed integer.
+4. You must not use any method provided by the library which converts/formats the number to hex directly.
+**Example 1**:
+```
+Input:
+26
+
+Output:
+"1a"
+```
+Example 2:
+```
+Input:
+-1
+
+Output:
+"ffffffff"
+```
+
+有关2进制的问题都可以试着考虑位运算。
+
+
+
+
+
+
+
 
 
 
