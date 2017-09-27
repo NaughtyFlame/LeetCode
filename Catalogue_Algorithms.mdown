@@ -1196,9 +1196,191 @@ Output:
 
 有关2进制的问题都可以试着考虑位运算。
 
+## 409 Longest Palindrome
 
+### Description
 
+Given a string which consists of lowercase or uppercase letters, find the length of the longest palindromes that can be built with those letters.
 
+This is case sensitive, for example "Aa" is not considered a palindrome here.
+
+**Note**:
+Assume the length of given string will not exceed 1,010.
+
+**Example**:
+```
+Input:
+"abccccdd"
+
+Output:
+7
+
+Explanation:
+One longest palindrome that can be built is "dccaccd", whose length is 7.
+```
+
+我用的是哈希表计数，然后最后进行累加，某一char是单数的话就-1，如果存在单数的话，累计一次。
+在答案中，提供了一个网上的讨论，更加简洁。直接数出现奇数次的元素的个数，再从总长中减去这个值，如果存在奇数次数的元素，最后加1.
+
+## Fizz Buzz
+
+### Description
+
+Write a program that outputs the string representation of numbers from 1 to n.
+
+But for multiples of three it should output “Fizz” instead of the number and for the multiples of five output “Buzz”. For numbers which are multiples of both three and five output “FizzBuzz”.
+
+**Example**:
+```
+n = 15,
+
+Return:
+[
+    "1",
+    "2",
+    "Fizz",
+    "4",
+    "Buzz",
+    "Fizz",
+    "7",
+    "8",
+    "Fizz",
+    "Buzz",
+    "11",
+    "Fizz",
+    "13",
+    "14",
+    "FizzBuzz"
+]
+```
+
+写对判断条件就好啦。
+
+## 414 Third Maximum Number
+
+### Description
+
+Given a non-empty array of integers, return the third maximum number in this array. If it does not exist, return the maximum number. The time complexity must be in O(n).
+
+**Example 1**:
+```
+Input: [3, 2, 1]
+
+Output: 1
+
+Explanation: The third maximum is 1.
+```
+**Example 2**:
+```
+Input: [1, 2]
+
+Output: 2
+
+Explanation: The third maximum does not exist, so the maximum (2) is returned instead.
+```
+**Example 3**:
+```
+Input: [2, 2, 3, 1]
+
+Output: 1
+
+Explanation: Note that the third maximum here means the third maximum distinct number.
+Both numbers with value 2 are both considered as second maximum.
+```
+
+设一个list保存最大的三个数，在替换list的值的时候，注意判断是否已经存在这个数。
+
+## 415 Add String
+
+### Description
+
+Given two non-negative integers num1 and num2 represented as string, return the sum of num1 and num2.
+
+**Note**:
+
+1. The length of both num1 and num2 is < 5100.
+2. Both num1 and num2 contains only digits 0-9.
+3. Both num1 and num2 does not contain any leading zero.
+4. You must not use any built-in BigInteger library or convert the inputs to integer directly.
+
+计算的时候别忘记进位。
+
+## 434 Number of Segments in a String
+
+### Description
+
+Count the number of segments in a string, where a segment is defined to be a contiguous sequence of non-space characters.
+
+Please note that the string does not contain any non-printable characters.
+
+**Example**:
+```
+Input: "Hello, my name is John"
+Output: 5
+```
+
+在python中，就是分割string，再返回list的长度。
+
+## 441 Arranging Coins
+
+### Description
+
+You have a total of n coins that you want to form in a staircase shape, where every k-th row must have exactly k coins.
+
+Given n, find the total number of full staircase rows that can be formed.
+
+n is a non-negative integer and fits within the range of a 32-bit signed integer.
+
+**Example 1**:
+```
+n = 5
+
+The coins can form the following rows:
+¤
+¤ ¤
+¤ ¤
+
+Because the 3rd row is incomplete, we return 2.
+```
+**Example 2**:
+```
+n = 8
+
+The coins can form the following rows:
+¤
+¤ ¤
+¤ ¤ ¤
+¤ ¤
+
+Because the 4th row is incomplete, we return 3.
+```
+
+在逐步逼近查找终值的时候，考虑二分查找，注意判断条件。
+
+## 447 Number of Boomerangs
+
+### Description
+
+Given n points in the plane that are all pairwise distinct, a "boomerang" is a tuple of points (i, j, k) such that the distance between i and j equals the distance between i and k (**the order of the tuple matters**).
+
+Find the number of boomerangs. You may assume that n will be at most **500** and coordinates of points are all in the range **[-10000, 10000]** (inclusive).
+
+**Example:**
+```
+Input:
+[[0,0],[1,0],[2,0]]
+
+Output:
+2
+
+Explanation:
+The two boomerangs are [[1,0],[0,0],[2,0]] and [[1,0],[2,0],[0,0]]
+```
+
+常规思路是取三个值，进行比较，距离相等则累加，这样的时间复杂度是O(n^3)，在刷了这么多的题之后，觉得使用hash表的方式，可以降低一级复杂度，这里的solution也用到了哈希表：
+1. 取一个点i，并建立一个空的哈希表，开始取第二个点j
+2. 哈希表的结构为：j到i的距离=>与这个距离一样的j点的数量
+3. 所有特定距离的j点的排列组合
 
 
 
