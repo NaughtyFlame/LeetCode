@@ -1382,8 +1382,26 @@ The two boomerangs are [[1,0],[0,0],[2,0]] and [[1,0],[2,0],[0,0]]
 2. 哈希表的结构为：j到i的距离=>与这个距离一样的j点的数量
 3. 所有特定距离的j点的排列组合
 
+## 448 Find All Numbers Disappeared in an Array
 
+## Description
 
+Given an array of integers where 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.
+
+Find all the elements of [1, n] inclusive that do not appear in this array.
+
+Could you do it without extra space and in O(n) runtime? You may assume the returned list does not count as extra space.
+
+Example:
+```
+Input:
+[4,3,2,7,8,2,3,1]
+
+Output:
+[5,6]
+```
+
+思路：遍历数组，当前数x，将位置为x-1的数变为负数，意思为：如果位置x-1为负数，那么这个数已经出现过。最后再次遍历数组，将正数的位置找出。
 
 
 
